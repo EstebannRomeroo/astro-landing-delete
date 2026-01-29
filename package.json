@@ -6,11 +6,17 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist" 
+}
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",
     "astro": "^5.16.16",
     "tailwindcss": "^4.1.18"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
